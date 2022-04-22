@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header class="navbar-logo">
+            <img class="logo"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/768px-Python_logo_01.svg.png"
+                alt="Python logo">
+        </header>
+        <ul>
+            <li><a href="#introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#hello_world" class="nav-link">Hello World</a></li>
+            <li><a href="#commenting" class="nav-link">Commenting</a></li>
+            <li><a href="#variables" class="nav-link">Variables</a></li>
+            <li><a href="#data_types" class="nav-link">Data Types</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <article>
+                <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code
+                    readability with the use of significant indentation. Its language constructs and object-oriented
+                    approach aim to help programmers write clear, logical code for small- and large-scale projects.</p>
+                <p>Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms,
+                    including structured (particularly procedural), object-oriented and functional programming. It is
+                    often described as a "batteries included" language due to its comprehensive standard library.</p>
+            </article>
+        </section>
+        <section class="main-section" id="hello_world">
+            <header>Hello World</header>
+            <article>
+                <p>Let's create your first program with Python. There is a common tradition to start coding in a new
+                    language. We will create a program Hello World. It is very simple. We will need a function
+                    <b>print()</b>.
+                    Follow the instruction and run the code.
+                </p>
+                <code>print('Hello world!')</code>
+                <p>Congratulations! You have just created your first program!</p>
+            </article>
+        </section>
+        <section class="main-section" id="commenting">
+            <header>Commenting</header>
+            <article>
+                <p>Comments are pieces of code, that are used to explain the logic of code. They help to make code more
+                    readable. When the code is executed, Python ignores comments.
+                </p>
+                <p>Comments in Python start with <b>#</b>.</p>
+                <code>
+                    # This piece prints Hello World
+                    print('Hello World!')
+                </code>
+                <p>Comments can be placed at the end of line as well.</p>
+                <code>
+                    print('Hello world') # This piece prints Hello World
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="variables">
+            <header>Variables</header>
+            <article>
+                <p>First of all, variable is container to store data values.</p>
+                <p>There is no a specific command to create variables in Python. You only need to assign a value to it.
+                    Let's see an example.</p>
+                <code>
+                    name = 'Alex' 
+                    print(name) # Alex
+                </code>
+                <p>You do not need to declare a variable type. This variable can be changed after they have been
+                    created.</p>
+                <code>
+                    x = 10
+                    print(x) # 10
+                    x = 'Hello'
+                    print(x) # Hello
+                </code>
+                <p>If you would like to specify the type of your variable, you can do casting. For instance, if you want
+                    it to be string, you can use <b>str()</b> method. There are
+                    <b>int()</b> and <b>float()</b> methods to convert variables to integers or float respectively. Of
+                    course, there are more methods, but we will discuss them in the future.
+                    To check the type of variable we can use <b>type()</b> method.
+                </p>
+                <code>
+                    number = 3
+                    print(type(number)) # class 'int' 
+                    number = float(3)
+                    print(type(number)) # class 'float'
+                </code>
+                <p>One more thing. Variables can be declared either with single or double quotes</p>
+            </article>
+        </section>
+        <section class="main-section" id="data_types" style="margin-bottom: 0;">
+            <header>Data Types</header>
+            <article>
+                <p>Let's learn about basic Data Types in this section. Data type is a super important concept in
+                    programming. Variables can store data of different types, and different types can do different
+                    things.</p>
+                <ol>
+                    <li>str</li>
+                    <p>Strings are sequences of character data.</p>
+                    <code>
+                        name = 'David'
+                        print(type(name)) # class 'str'
+                    </code>
+                    <li>int</li>
+                    <p>Integer is a whole number, positive or negative, without decimals, of unlimited length.</p>
+                    <code>
+                        age = 23
+                        print(type(age)) # class 'int'
+                    </code>
+                    <li>float</li>
+                    <p>The float type in Python designates a floating-point number. float values are specified with a
+                        decimal point.</p>
+                    <code>
+                        number = 4.5
+                        print(type(number)) # class 'float'
+                    </code>
+                    <li>list</li>
+                    <p>Lists are used to store multiple items in a single variable.</p>
+                    <code>
+                        fruits = ['apple', 'banana', 'orange']
+                    </code>
+                    <li>dict</li>
+                    <p>Dictionaries are used to store data values in key:value pairs.</p>
+                    <code>
+                        person = {'name': 'Alex', 'age': 30}
+                    </code>
+                    <li>bool</li>
+                    <p>Objects of Boolean type may have one of two values, True or False</p>
+                </ol>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
